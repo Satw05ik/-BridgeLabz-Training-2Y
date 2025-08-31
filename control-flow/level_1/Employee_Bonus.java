@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Employee_Bonus {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double salary = sc.nextDouble();
+
+        int years = sc.nextInt();
+
+        if (years > 5) {
+            double bonus = salary * 0.05; 
+            System.out.println("The bonus amount is: " + bonus);
+        } else {
+            System.out.println("No bonus. Service must be more than 5 years.");
+        }
+        sc.close();
+    }
+}
